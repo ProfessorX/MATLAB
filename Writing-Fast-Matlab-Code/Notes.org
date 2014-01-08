@@ -1,0 +1,63 @@
+* Writing Fast MATLAB Code
+
+** Notes
+
+*** Organization
+    - Use a separate folder for each project.
+    - Write header comments, especially H1.
+    - Save frequent console commands as a script.
+
+
+*** Avoid losing data
+    - Don't use =clear all= in a script.
+    - Beware of clobber.
+    - Beware of what can crash MATLAB.
+
+
+*** Vectorization
+    - Vectorization is one of the most general and effective way of
+      writing *fast* M-code.
+    - Like computations, MATLAB's logic is vectorized.
+
+
+*** Inlining Simple Functions
+    - Every time an M-file function is called, the MATLAB interpreter
+      incurs some overhead. Additionally, many M-file functions begin
+      with conditional code that checks the input arguments for errors
+      or determines the mode of operation.
+    - "Inlining a function" means to replace a call to the function
+      code itself. Beware that inlining should not be confused with
+      MATLAB's "inline" function datatype.
+    - Don't go overboard. Inlining functions is only beneficial when
+      the function is simple and when it is called frequently. Doing
+      it unnecessarily obfuscates the code. (UNLESS your comment is
+      god-written.)
+
+
+*** Referencing Operations
+    - *It is faster to scan down columns than over rows.*
+    - Using the wildcard, :, in a subscript refers to an entire row or
+      column.
+    - *Logical Indexing*
+    - It is also possible to delete subscripts if all but one
+      subscript are wildcard. =A(2,:) = []= deletes the second
+      row. Deletions like =A(2,1) = []= or even =A(2, 1:end) = []= are
+      illegal. 
+
+
+* Comments
+  - The naming convention is awkward because of the MATLAB mode in
+    Emacs. Anyway, we have no solution right now. 
+
+
+** D2L at Las Vegas. 
+   - Even a hero like Tusk can help you win the game. What the heck.
+   - Even a team like Alliance can lose a game when it's in
+     advantage. This illustrate that you have to work hard or you will
+     get fucked even by NOBODY.     
+
+
+
+
+
+
