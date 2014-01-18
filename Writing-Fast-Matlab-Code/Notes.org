@@ -32,6 +32,8 @@
       the function is simple and when it is called frequently. Doing
       it unnecessarily obfuscates the code. (UNLESS your comment is
       god-written.)
+    
+
 
 
 *** Referencing Operations
@@ -44,6 +46,8 @@
       row. Deletions like =A(2,1) = []= or even =A(2, 1:end) = []= are
       illegal. 
 
+
+*** 
 
 * Comments
   - The naming convention is awkward because of the MATLAB mode in
