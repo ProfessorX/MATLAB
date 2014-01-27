@@ -38,6 +38,8 @@
     - Even without the signal processing toolbox, MATLAB is quite
       capable in signal processing computations. This section lists
       code snippets to perform several common operations efficiently.
+    - 
+
 
 
 *** Referencing Operations

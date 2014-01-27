@@ -1,0 +1,35 @@
+* Common logical functions
+
+** Checking if there is "0" in the array.
+   - all
+   - any
+
+
+** Generating logical array
+   - false
+   - true
+   - logical
+
+
+** Judging specific elements
+   - isempty
+   - isfinite
+   - isinf
+   - isnan
+   - isprime
+   - isreal
+   - isletter
+   - isspace
+   
+
+** Judging specific data types
+   - isa
+   - ischar
+   - isglobal
+   - ishandle
+   - islogical
+   - isnumeric
+
+
+
+
